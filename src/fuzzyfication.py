@@ -55,11 +55,19 @@ class fuzzyfication():
     #defuzzifify using the reults across all fuzzyfications. Min of Max
     #Just  use if just one reult is desired
     @staticmethod
-    def defuzzification(results: dict, values: list):
+    def defuzzification(results: dict, values: list, method: str = "minOfMax") -> "defuzzified result":
         """
             results: activations
             values: corresponding values
+            method: method to defuzzify. Default = minOfMax. Possible choices: minOfMax, weightedMean 
         """
-        whereMaxima = np.where(np.array(list(result.values())) == np.max(np.array(list(result.values()))))[0]
-        values = np.array(values)
-        return values[whereMaxima]
+        if method == "minOfMax":
+            whereMaxima = np.where(np.array(list(results.values())) == np.max(np.array(list(results.values()))))[0]
+            values = np.array(values)
+            return values[whereMaxima]
+        if method == "weightedMean":
+            values = np.array(values)
+            r = np.array(list(results.values())) * values
+            return np.sum(r)
+        else:
+            raise ValueError("Use one of minOfMax or weightedMean.")
