@@ -20,6 +20,13 @@ fuzzyfied = fuzzyfication(DICT, some_quantity)
 
 The `fuzzyfied` class transforms the given dictionary into triangular membership functions and evaluates the provided quantity on these functions.
 
+## Triangular Membership Functions
+
+The fuzzification is based on triangular membership functions.  
+Each ordinal category is represented by a triangle, and the membership degree is calculated between `0` and `1`.
+
+![Triangular membership functions](images/triangle.png)
+
 ## Logical Operations
 
 Using NumPy, fuzzy logical operations can be calculated as follows:
