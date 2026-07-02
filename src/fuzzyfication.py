@@ -1,3 +1,5 @@
+import numpy as np
+
 class fuzzyfication():
 
     #initialize using ordinal or categorical dictionary and an input number
