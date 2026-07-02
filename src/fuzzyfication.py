@@ -1,5 +1,3 @@
-import numpy as np
-
 class fuzzyfication():
 
     #initialize using ordinal or categorical dictionary and an input number
@@ -58,6 +56,10 @@ class fuzzyfication():
     #Just  use if just one reult is desired
     @staticmethod
     def defuzzification(results: dict, values: list):
+        """
+            results: activations
+            values: corresponding values
+        """
         whereMaxima = np.where(np.array(list(result.values())) == np.max(np.array(list(result.values()))))[0]
         values = np.array(values)
         return values[whereMaxima]
