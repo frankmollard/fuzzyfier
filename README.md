@@ -27,6 +27,8 @@ Each ordinal category is represented by a triangle, and the membership degree is
 
 ![Triangular membership functions](images/triangle.png)
 
+<img src="images/triangle.png" alt="Triangular membership functions" width="500" height="600">
+
 ## Logical Operations
 
 Using NumPy, fuzzy logical operations can be calculated as follows:
