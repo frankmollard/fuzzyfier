@@ -80,3 +80,4 @@ See also the examples:
 
 * `smooth trader`
 * `kettle steering`
+* `stock picking` (advanced example)
