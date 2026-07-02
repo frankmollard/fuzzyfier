@@ -25,7 +25,7 @@ The `fuzzyfied` class transforms the given dictionary into triangular membership
 The fuzzification is based on triangular membership functions.  
 Each ordinal category is represented by a triangle, and the membership degree is calculated between `0` and `1`.
 
-<img src="images/triangle.png" alt="Triangular membership functions" width="600" height="900">
+<img src="images/affiliationFunction.png" alt="Triangular membership functions" width="600" height="900">
 
 ## Logical Operations
 
