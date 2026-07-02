@@ -6,9 +6,9 @@ The class fuzzified fuzzyfies the given dict and applies some quantity on the re
 
 with numpy logical links can be calculatet by:
 
-`$$ fuzzyfied1 \land fuzzyfied2 = $$ np.min([fuzzyfied1.fuzzy()["some key"], fuzzyfied2.fuzzy()["some key"]])`
+`$ fuzzyfied1 \land fuzzyfied2 = $ np.min([fuzzyfied1.fuzzy()["some key"], fuzzyfied2.fuzzy()["some key"]])`
 
-`$$ fuzzyfied1 \lor fuzzyfied2 = $$ np.max([fuzzyfied1.fuzzy()["some key"], fuzzyfied2.fuzzy()["some key"]])`
+`$ fuzzyfied1 \lor fuzzyfied2 = $ np.max([fuzzyfied1.fuzzy()["some key"], fuzzyfied2.fuzzy()["some key"]])`
 
 If exactly one result is required:
 
