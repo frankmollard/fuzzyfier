@@ -81,3 +81,4 @@ See also the examples:
 * `smooth trader`
 * `kettle steering`
 * `stock picking` (advanced example)
+* `stock picking simulation`(advanced example 2)
